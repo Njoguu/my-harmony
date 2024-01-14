@@ -1,4 +1,4 @@
-![import-4](https://github.com/Njoguu/my-harmony/assets/60213982/4a4db5b0-59fe-42a7-9a8c-e47953f000aa)[![wakatime](https://wakatime.com/badge/user/7992ed07-43da-4cbe-a745-5dc9416335df/project/018d06cc-0a5d-4b1d-88e4-9401d5e5f7c0.svg)](https://wakatime.com/badge/user/7992ed07-43da-4cbe-a745-5dc9416335df/project/018d06cc-0a5d-4b1d-88e4-9401d5e5f7c0)
+[![wakatime](https://wakatime.com/badge/user/7992ed07-43da-4cbe-a745-5dc9416335df/project/018d06cc-0a5d-4b1d-88e4-9401d5e5f7c0.svg)](https://wakatime.com/badge/user/7992ed07-43da-4cbe-a745-5dc9416335df/project/018d06cc-0a5d-4b1d-88e4-9401d5e5f7c0)
 
 # My Harmony
 Discover a selection of my favorite Gospel artists in Kenya whose performances and heartfelt solo expressions span various styles that enrich your soul.
@@ -53,18 +53,16 @@ To do this, follow these steps:
 
 2. Click on `Choose File`.
 
-  
+![import-2](https://github.com/Njoguu/my-harmony/assets/60213982/400a7dd2-15f1-41dc-9b94-28ffde3ce934)
 
 3. Select the file named `my_harmony.sql` from the `data_dump` folder.
 
 
 4. After selecting the file, scroll down then click on `Import`.
 
-
+![import-4](https://github.com/Njoguu/my-harmony/assets/60213982/4a4db5b0-59fe-42a7-9a8c-e47953f000aa)
 
 5. After successful import, you will be able to view the sample database, tables and data on the far left.
-
-
 
 
 #### 6. Run the app
