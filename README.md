@@ -57,6 +57,7 @@ To do this, follow these steps:
 
 3. Select the file named `my_harmony.sql` from the `data_dump` folder.
 
+![import-3](https://github.com/Njoguu/my-harmony/assets/60213982/0c635118-b795-4794-9ffb-f0dc10c4d07a)
 
 4. After selecting the file, scroll down then click on `Import`.
 
@@ -64,22 +65,11 @@ To do this, follow these steps:
 
 5. After successful import, you will be able to view the sample database, tables and data on the far left.
 
+![import-5](https://github.com/Njoguu/my-harmony/assets/60213982/69d73906-117b-4bee-ba36-e84a0bc31bcc)
+
 
 #### 6. Run the app
 After successful import, open a new tab and navigate to [index](http://localhost:8081/) where you will be able to view and interact with the app.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![run-app](https://github.com/Njoguu/my-harmony/assets/60213982/3adcdc40-8261-490a-af91-52061598bd67)
 
