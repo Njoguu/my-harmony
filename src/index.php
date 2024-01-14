@@ -7,13 +7,13 @@
     <title>Home | My Harmony</title>
 
     <!-- link to custom css -->
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 
     <!-- link to favicon -->
-    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
 
     <!-- link to custom js -->
-    <script src="../assets/js/scripts.js"></script>
+    <script src="./assets/js/scripts.js"></script>
 
 </head>
 
@@ -21,7 +21,7 @@
     <div class="landing-page">
         <header id="navbar">
             <div class="container">
-                <a href="./index.php" class="logo"><img src="../assets/images/favicon.ico" alt="logo">My Harmony</a>
+                <a href="./index.php" class="logo"><img src="./assets/images/favicon.ico" alt="logo">My Harmony</a>
                 <ul class="links">
                     <li>Home</li>
                     <li>About</li>
@@ -56,9 +56,24 @@
 
         <div class="articles">
             <?php
-            // Fetch artists from the database
-            $db = new mysqli('localhost', 'root', '', 'my_harmony');
-            $result = $db->query("SELECT * FROM artists");
+            $config = include 'config.php';
+
+            // Get database connection parameters
+            $host = $config['DB_HOST'];
+            $username = $config['DB_USER'];
+            $password = $config['DB_PASSWORD'];
+            $database = $config['DB_DATABASE'];
+
+            // Create connection
+            $conn = new mysqli($host, $username, $password, $database);
+
+            // Check connection
+            if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+            }
+            // echo "Connected successfully";
+
+            $result = $conn->query("SELECT * FROM artists");
 
             while ($row = $result->fetch_assoc()) {
                 echo '<article>';
@@ -83,7 +98,7 @@
                 echo '</article>';
             }
 
-            $db->close();
+            $conn->close();
             ?>
             </article>
         </div>
