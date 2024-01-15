@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'DB_HOST' => 'db',
-    'DB_USER' => 'root',
-    'DB_PASSWORD' => 'shroot',
-    'DB_DATABASE' => 'my_harmony',
+    'DB_HOST' => 'sql5.freesqldatabase.com',
+    'DB_USER' => 'sql5677029',
+    'DB_PASSWORD' => 'WwLhdFC191',
+    'DB_DATABASE' => 'sql5677029',
 ];
