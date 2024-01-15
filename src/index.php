@@ -28,7 +28,6 @@
                     <a href="#artists">
                         <li>Browse Artists</li>
                     </a>
-
                 </ul>
             </div>
         </header>
@@ -51,7 +50,7 @@
         </div>
     </div>
 
-    <section id="artists" class="artists container">
+    <section id="artists" class="details container">
         <h2>My Favourite Artists</h2>
 
         <div class="articles">
@@ -69,9 +68,8 @@
 
             // Check connection
             if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
+                die("Connection failed: " . $conn->connect_error);
             }
-            // echo "Connected successfully";
 
             $result = $conn->query("SELECT * FROM artists");
 
@@ -84,11 +82,10 @@
                 echo '<div class="article-body">';
                 echo '<h3>' . $row['name'] . '</h3>';
                 echo '<p>';
-                // Add some placeholder text or use $row['description'] if you have a description field in your database
                 echo '' . $row['description'] . '';
                 echo '</p>';
                 echo '<a href="artist-details.php?id=' . $row['id'] . '" class="read-more">';
-                echo 'More Details <span class="sr-only">about ' . $row['name'] . '</span>';
+                echo 'More Details';
                 echo '<svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">';
                 echo '<path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />';
                 echo '</svg>';

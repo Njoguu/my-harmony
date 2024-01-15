@@ -63,14 +63,11 @@ if (isset($_GET['id'])) {
                 </ul>
             </div>
         </header>
-
     </div>
 
     <section id="lyrics" class="details container">
-        <h2>Song Title:
-            <?php echo isset($song['title']) ? $song['title'] : 'Title not Available'; ?>
+        <h2>Song Title: <?php echo isset($song['title']) ? $song['title'] : 'Title not Available'; ?>
         </h2>
-
 
         <h3>Lyrics</h3>
         <p>
@@ -88,10 +85,6 @@ if (isset($_GET['id'])) {
             }
             ?>
         </p>
-
-
-
-
     </section>
 </body>
 
