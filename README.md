@@ -25,6 +25,26 @@ cd my-harmony
 ```
 
 #### 3. Build and Run the project 
+##### a) Using the Makefile
+This project includes a Makefile to automate common tasks.
+
+###### Prerequisites
+Ensure you have [Make](https://www.gnu.org/software/make/) installed on your system.
+
+###### Makefile Location
+The Makefile is located in the root directory of this project.
+
+###### Common Targets
+Here are some frequently used targets and their purposes:
+
+`build-app`: Build and start Docker containers
+
+###### Usage Examples
+```bash
+make build-app
+```
+
+##### b) Using Docker Compose build code
 ```bash
 docker compose up --build -d
 ```
