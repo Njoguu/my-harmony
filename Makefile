@@ -3,10 +3,10 @@
 #================================
 COMPOSE := @docker compose
 
-remove:
+remove-services:
 	$(COMPOSE) down
 
-build:
+build-app:
 	$(COMPOSE) up --build -d
 
 start-services: 
