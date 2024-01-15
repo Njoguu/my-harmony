@@ -24,7 +24,6 @@
                 <a href="./index.php" class="logo"><img src="./assets/images/favicon.ico" alt="logo">My Harmony</a>
                 <ul class="links">
                     <li>Home</li>
-                    <li>About</li>
                     <a href="#artists">
                         <li>Browse Artists</li>
                     </a>
