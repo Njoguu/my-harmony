@@ -56,7 +56,7 @@
 
         <div class="articles">
             <?php
-            $config = include 'config.php';
+            $config = include '../config.php';
 
             // Get database connection parameters
             $host = $config['DB_HOST'];
